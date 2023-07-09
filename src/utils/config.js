@@ -18,14 +18,16 @@ export const posterCarouselSetting = {
       settings: {
         slidesToShow: 2,
         slidesToScroll: 2,
-        initialSlide: 2,
+        infinite: true,
       },
     },
     {
       breakpoint: 480,
       settings: {
-        slidesToShow: 3,
+        slidesToShow: 2,
         slidesToScroll: 1,
+        initialSlide: 2,
+        infinite: true,
       },
     },
   ],
@@ -50,7 +52,7 @@ export const castCrewSetting = {
       settings: {
         slidesToShow: 3,
         slidesToScroll: 2,
-        initialSlide: 2,
+        infinite: true,
       },
     },
     {
@@ -58,6 +60,7 @@ export const castCrewSetting = {
       settings: {
         slidesToShow: 2,
         slidesToScroll: 1,
+        infinite: true,
       },
     },
   ],

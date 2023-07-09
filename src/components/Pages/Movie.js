@@ -55,6 +55,7 @@ const Movie = () => {
     const getRecommended = await axios.get(`/movie/${id}/recommendations`);
     setRecommended(getRecommended?.data?.results);
   }
+  console.log(recommended);
   const settings = {
     infinite: false,
     speed: 500,
@@ -75,7 +76,7 @@ const Movie = () => {
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
-          initialSlide: 2,
+          infinite: true,
         },
       },
       {
@@ -84,6 +85,7 @@ const Movie = () => {
           slidesToShow: 2,
           slidesToScroll: 1,
           initialSlide: 2,
+          infinite: true,
         },
       },
     ],
